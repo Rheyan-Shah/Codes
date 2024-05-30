@@ -1,0 +1,87 @@
+
+import java.util.*;
+public class W3Q1
+{
+    public static void main()
+    {
+        int orig, d1, d2, d3, r;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter a 3 digit number");
+        orig = sc.nextInt();
+        r = orig / 10;
+        d3 = orig % 10;
+        d2 = r % 10;
+        d1 = r / 10;
+        System.out.println("Original number= " + orig);
+        System.out.println("First Digit= " + d1);
+        System.out.println("Second digit= " + d2);
+        System.out.println("Third digit= " + d3);
+    }
+}
+
+import java.util.*;
+public class W3Q2
+{
+    public static void main()
+    {
+        int orig, d1, d2, d3, r, sum;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter a 3 digit number");
+        orig = sc.nextInt();
+        r = orig / 10;
+        d3 = orig % 10;
+        d2 = r % 10;
+        d1 = r / 10;
+        sum = d1 + d2 + d3;
+        System.out.println("Sum of all 3 digits= " + sum);
+    }
+}
+
+import java.util.*;
+public class W3Q3
+{
+    public static void main()
+    {
+        int orig, d1, d2, d3, r, soq;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter a 3 digit number");
+        orig = sc.nextInt();
+        r = orig / 10;
+        d3 = orig % 10;
+        d2 = r % 10;
+        d1 = r / 10;
+        soq = (d1 * d1) + (d2 * d2) + (d3 * d3);
+        System.out.println("Sum of squares of the 3 digits= " + soq);
+    }
+}
+
+import java.util.*;
+public class W3Q4
+{
+    public static void main()
+    {
+        double n, n1;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter a value in m/sec");
+        n = sc.nextDouble();
+        n1 = (n * 18) / 5.0;
+        System.out.println("Value in m/sec= " + n + "m/s");
+        System.out.println("Value in km/hr= " + n1 + "km/hr");
+    }
+}
+
+import java.util.*;
+public class W3Q4
+{
+    public static void main()
+    {
+        double n, n1;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter a value in m/sec");
+        n = sc.nextDouble();
+        n1 = (n * 18) / 5.0;
+        System.out.println("Value in m/sec= " + n + "m/s");
+        System.out.println("Value in km/hr= " + n1 + "km/hr");
+    }
+}
+
