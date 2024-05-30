@@ -1,0 +1,123 @@
+import java.util.Scanner;
+
+public class SCannerQ1{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter employee name: ");
+        String n = sc.nextLine();
+
+        System.out.print("Enter basic salary: ");
+        double b = sc.nextDouble();
+
+        double h = 0.15 * b;
+        double d = 0.08 * b;
+        double p = 0.10 * b;
+
+        double g = b + h + d;
+        double nt = g - p;
+
+        System.out.println("Name: " + n);
+        System.out.println("Salary: " + b);
+        System.out.println("HRA: " + h);
+        System.out.println("DA: " + d);
+        System.out.println("PF: " + p);
+        System.out.println("Net: " + nt);
+        System.out.println("Gross: " + g);
+
+        sc.close();
+    }
+}
+
+
+
+
+
+import java.util.*;
+public class ScannerWQ2
+{
+    public static void main()
+    {
+        String name;
+        int roll;
+        double M1, M2, M3, total, average;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter name, roll number, and 3 subject marks");
+        name = sc.next();
+        roll = sc.nextInt();
+        M1 = sc.nextDouble();
+        M2 = sc.nextDouble();
+        M3 = sc.nextDouble();
+        total = M1 + M2 + M3;
+        average = (M1 + M2 + M3) / 3;
+        System.out.println("Name : " + name);
+        System.out.println("Roll : " + roll);
+        System.out.println("Mark1 : " + M1);
+        System.out.println("Mark2 : " + M2);
+        System.out.println("Mark3 : " + M3);
+        System.out.println("Total : " + total);
+        System.out.println("Average : " + average);
+    }
+}
+import java.util.Scanner;
+
+public class ScannerWQ5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the number of seconds: ");
+        int secs = sc.nextInt();
+
+        int days = secs / (24 * 3600);
+        int remSecs = secs % (24 * 3600);
+        int hrs = remSecs / 3600;
+        remSecs %= 3600;
+        int mins = remSecs / 60;
+        remSecs %= 60;
+
+       System.out.println(secs + " seconds: " + days + " days " + hrs + " hours " + mins + " minutes " + remSecs + " seconds");
+
+
+        sc.close();
+    }
+}
+
+
+
+import java.util.*;
+public class ScannerWQ3
+{
+    public static void main()
+    {
+        double radius;
+        double d, circum, area;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter radius of the circle");
+        radius = sc.nextDouble();
+        d = 2 * radius;
+        area = 3.14 * radius * radius;
+        circum = 2 * 3.14 * radius;
+        System.out.println("Radius : " + radius);
+        System.out.println("Diameter : " + d);
+        System.out.println("Area : " + area);
+        System.out.println("Circumference : " + circum);
+    }
+}
+
+import java.util.*;
+public class ScannerWQ4
+{
+    public static void main()
+    {
+        int days1, days2, months, years, daysTotal;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter number of days");
+        days1 = sc.nextInt();
+        years = days1 / 365;
+        days2 = days1 % 365;
+        months = days2 / 30;
+        daysTotal = days2 % 30;
+        System.out.println(days1 + " days : " + years + " year " + months + " months " + daysTotal + " days.");
+    }
+}
+
