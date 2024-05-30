@@ -1,0 +1,63 @@
+public class W1Q1
+{
+    public static void main()
+    {
+        int s, a = 10, b = 5;
+        s = a + b;
+        System.out.println("Number 1: " + a);
+        System.out.println("Number 2: " + b);
+        System.out.println("Their sum = " + s);
+    }
+}
+
+public class W1Q2
+{
+    public static void main()
+    {
+        double l = 10, b = 20, area, perimeter;
+        area = l * b;
+        perimeter = 2 * (l + b);
+        System.out.println("Length of the rectangle = " + l);
+        System.out.println("Breadth of the rectangle = " + b);
+        System.out.println("Area of the rectangle = " + area);
+        System.out.println("Perimeter of the rectangle = " + perimeter);
+    }
+}
+
+public class W1Q3
+{
+    public static void main()
+    {
+        double principle = 1000, rate = 10, time = 4, SI;
+        SI = (principle * rate * time) / 100;
+        System.out.println("Principle = " + principle);
+        System.out.println("Rate = " + rate + "%");
+        System.out.println("Time = " + time + " years");
+        System.out.println("Simple Interest = " + SI);
+    }
+}
+
+public class W1Q4
+{
+    public static void main()
+    {
+        double C = 32, F;
+        F = ((9 * C) / 5) + 32;
+        System.out.println(C + " Celsius = " + F + " Fahrenheit");
+    }
+}
+
+public class W1Q5
+{
+    public static void main()
+    {
+        double innerR = 10, outerR = 20, height = 5, volume, TSA;
+        TSA = 2 * 3.14 * outerR * height + 2 * 3.14 * innerR * height + 2 * 3.14 * ((outerR * outerR) - (innerR * innerR));
+        volume = 3.14 * height * ((outerR * outerR) - (innerR * innerR));
+        System.out.println("Inner radius= " + innerR);
+        System.out.println("Outer radius= " + outerR);
+        System.out.println("Height= " + height);
+        System.out.println("Total Surface Area = " + TSA);
+        System.out.println("Volume = " + volume);
+    }
+}
