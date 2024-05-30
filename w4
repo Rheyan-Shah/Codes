@@ -1,0 +1,80 @@
+import java.util.*;
+class W4Q1
+{
+    public static void main()
+    {
+        double p;
+        int r, t;
+        double si, ci, amount;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter Principal, rate, and time");
+        p = sc.nextDouble();
+        r = sc.nextInt();
+        t = sc.nextInt();
+        si = (p * r * t) / 100.0;
+        amount = Math.pow((p * (1 + r)), t);
+        ci = amount - p;
+        System.out.println("Simple interest is: " + si);
+        System.out.println("Compound interest is: " + ci);
+        System.out.println("Amount is: " + amount);
+    }
+}
+
+import java.util.*;
+class W4Q1
+{
+    public static void main()
+    {
+        double p;
+        int r, t;
+        double si, ci, amount;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter Principal, rate, and time");
+        p = sc.nextDouble();
+        r = sc.nextInt();
+        t = sc.nextInt();
+        si = (p * r * t) / 100.0;
+        amount = Math.pow((p * (1 + r)), t);
+        ci = amount - p;
+        System.out.println("Simple interest is: " + si);
+        System.out.println("Compound interest is: " + ci);
+        System.out.println("Amount is: " + amount);
+    }
+}
+
+import java.util.*;
+class W4Q2
+{
+    public static void main()
+    {
+        double a, b, c, area, s;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter the 3 sides of a triangle");
+        a = sc.nextDouble();
+        b = sc.nextDouble();
+        c = sc.nextDouble();
+        s = (a + b + c) / 2.0;
+        area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+        System.out.println("Semi-perimeter of the triangle is: " + s);
+        System.out.println("Area of the triangle is: " + area);
+    }
+}
+
+import java.util.*;
+class W4Q4
+{
+    public static void main()
+    {
+        double a, b, c, r1, r2;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter values a, b, and c of a quadratic equation");
+        a = sc.nextDouble();
+        b = sc.nextDouble();
+        c = sc.nextDouble();
+        r1 = (-b + (Math.sqrt(Math.pow(b, 2) - 4 * a * c))) / (2.0 * a);
+        r2 = (-b - (Math.sqrt(Math.pow(b, 2) - 4 * a * c))) / (2.0 * a);
+        System.out.println("First root of the quadratic is: " + r1);
+        System.out.println("Second root of the quadratic is: " + r2);
+    }
+}
+
